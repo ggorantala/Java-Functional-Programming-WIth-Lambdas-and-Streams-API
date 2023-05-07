@@ -12,7 +12,7 @@ package src.dev.ggorantala.streamsapi.declarative;
 import java.util.Arrays;
 import java.util.List;
 
-public class Duplicates {
+public class RemoveDuplicates {
   private static final List<Integer> values = Arrays.asList(1, 1, 2, 2, 3, 4, 5, 6, 7, 7, 8);
 
   public static void main(String[] args) {
