@@ -1,4 +1,4 @@
-package src.dev.ggorantala.streamsapi.functionalprogramming.imperative;
+package src.dev.ggorantala.streamsapi.methodreferences.kinds.arbitaryobject;
 /*
  * This code is part of the course "Master Java 8(11/17) Functional Programming With Lambdas And Streams API"
  * for https://ggorantala.dev.
@@ -9,17 +9,14 @@ package src.dev.ggorantala.streamsapi.functionalprogramming.imperative;
  * Date: 07/05/23
  */
 
-import java.util.List;
-import src.dev.ggorantala.model.Book;
+import src.dev.ggorantala.model.Person;
 
 public class ListObjects {
   public static void main(String[] args) {
-    List<Book> imperativeApproach = Book.BOOKS;
-
-    for (Book book : imperativeApproach) {
-      if (book.costInEuros() >= 5) {
-        System.out.println(book);
-      }
-    }
+    Person.PEOPLE // list of persons
+        .stream()
+        .map(Person::name) // Stream<String>
+        .toList()
+        .forEach(System.out::println);
   }
 }

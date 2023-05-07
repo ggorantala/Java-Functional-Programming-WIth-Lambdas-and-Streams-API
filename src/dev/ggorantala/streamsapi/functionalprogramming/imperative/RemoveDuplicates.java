@@ -10,17 +10,16 @@ package src.dev.ggorantala.streamsapi.functionalprogramming.imperative;
  */
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import src.dev.ggorantala.constants.Constants;
 
 public class RemoveDuplicates {
-  private static final List<Integer> values = Arrays.asList(1, 1, 2, 2, 3, 4, 5, 6, 7, 7, 8);
 
   public static void main(String[] args) {
     List<Integer> uniqueValues = new ArrayList<>();
 
     // in below, `value` variable is changed/updated for each iteration - "imperative way".
-    for (int value : values) {
+    for (Integer value : Constants.DUPLICATE_INTEGER_LIST) {
       if (!uniqueValues.contains(value)) {
         uniqueValues.add(value);
       }

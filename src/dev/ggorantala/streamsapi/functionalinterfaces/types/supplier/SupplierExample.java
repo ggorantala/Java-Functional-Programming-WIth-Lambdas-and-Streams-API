@@ -1,4 +1,4 @@
-package src.dev.ggorantala.streamsapi.functionalprogramming.functions.pure;
+package src.dev.ggorantala.streamsapi.functionalinterfaces.types.supplier;
 /*
  * This code is part of the course "Master Java 8(11/17) Functional Programming With Lambdas And Streams API"
  * for https://ggorantala.dev.
@@ -9,17 +9,14 @@ package src.dev.ggorantala.streamsapi.functionalprogramming.functions.pure;
  * Date: 07/05/23
  */
 
+import java.util.function.Supplier;
 import src.dev.ggorantala.constants.Constants;
 
-public class MathFunctions {
+public class SupplierExample {
 
   public static void main(String[] args) {
+    Supplier<String> s = () -> Constants.GREETING_MESSAGE;
 
-    double result = mathOperation(Constants.INTEGER_FIRST_VALUE, Constants.INTEGER_SECOND_VALUE);
-    System.out.println(result);
-  }
-
-  public static Double mathOperation(Integer a, Integer b) {
-    return Math.pow(a, b);
+    System.out.println(s.get()); // Hello, Developers!
   }
 }

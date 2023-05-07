@@ -9,18 +9,16 @@ package src.dev.ggorantala.streamsapi.functionalprogramming.functions.pure;
  * Date: 07/05/23
  */
 
-import java.util.function.Predicate;
 import src.dev.ggorantala.constants.Constants;
 
-public class FunctionalInterfaceExample {
+public class StringOperations {
 
   public static void main(String[] args) {
-    boolean result = isEven(Constants.INTEGER_VALUE);
+    String result = add(Constants.FIRST_STRING, Constants.SECOND_STRING);
     System.out.println(result);
   }
 
-  public static boolean isEven(Integer A) {
-    Predicate<Integer> isEven = n -> n % 2 == 0;
-    return isEven.test(A);
+  public static String add(String s1, String s2) {
+    return s1.concat(s2);
   }
 }

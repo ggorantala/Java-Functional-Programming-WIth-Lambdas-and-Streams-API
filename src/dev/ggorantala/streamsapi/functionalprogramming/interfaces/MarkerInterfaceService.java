@@ -1,4 +1,4 @@
-package src.dev.ggorantala.streamsapi.model;
+package src.dev.ggorantala.streamsapi.functionalprogramming.interfaces;
 /*
  * This code is part of the course "Master Java 8(11/17) Functional Programming With Lambdas And Streams API"
  * for https://ggorantala.dev.
@@ -9,4 +9,6 @@ package src.dev.ggorantala.streamsapi.model;
  * Date: 07/05/23
  */
 
-public record Person(String name) {}
+public interface MarkerInterfaceService {
+    // no methods in it.
+}

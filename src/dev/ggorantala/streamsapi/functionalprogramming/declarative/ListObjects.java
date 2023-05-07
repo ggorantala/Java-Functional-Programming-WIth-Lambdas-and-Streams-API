@@ -10,7 +10,7 @@ package src.dev.ggorantala.streamsapi.functionalprogramming.declarative;
  */
 
 import java.util.List;
-import src.dev.ggorantala.streamsapi.model.Book;
+import src.dev.ggorantala.model.Book;
 
 public class ListObjects {
   public static void main(String[] args) {

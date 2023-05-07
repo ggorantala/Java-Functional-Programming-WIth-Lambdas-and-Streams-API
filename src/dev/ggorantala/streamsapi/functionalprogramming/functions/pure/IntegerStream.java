@@ -9,18 +9,21 @@ package src.dev.ggorantala.streamsapi.functionalprogramming.functions.pure;
  * Date: 07/05/23
  */
 
-import java.util.function.Predicate;
+import java.util.List;
+import java.util.stream.Collectors;
 import src.dev.ggorantala.constants.Constants;
 
-public class FunctionalInterfaceExample {
+public class IntegerStream {
 
   public static void main(String[] args) {
-    boolean result = isEven(Constants.INTEGER_VALUE);
-    System.out.println(result);
+    List<Integer> result = streamOperation(Constants.INTEGERS_LIST);
+    result.forEach(System.out::println);
   }
 
-  public static boolean isEven(Integer A) {
-    Predicate<Integer> isEven = n -> n % 2 == 0;
-    return isEven.test(A);
+  public static List<Integer> streamOperation(List<Integer> input) {
+    return input // collection of integers
+        .stream() // Stream of integers
+        .map(n -> n * 2)
+        .collect(Collectors.toList());
   }
 }

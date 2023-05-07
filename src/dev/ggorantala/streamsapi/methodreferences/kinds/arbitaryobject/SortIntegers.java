@@ -1,4 +1,4 @@
-package src.dev.ggorantala.streamsapi.functionalprogramming.functions.pure;
+package src.dev.ggorantala.streamsapi.methodreferences.kinds.arbitaryobject;
 /*
  * This code is part of the course "Master Java 8(11/17) Functional Programming With Lambdas And Streams API"
  * for https://ggorantala.dev.
@@ -11,15 +11,13 @@ package src.dev.ggorantala.streamsapi.functionalprogramming.functions.pure;
 
 import src.dev.ggorantala.constants.Constants;
 
-public class MathFunctions {
+public class SortIntegers {
 
   public static void main(String[] args) {
 
-    double result = mathOperation(Constants.INTEGER_FIRST_VALUE, Constants.INTEGER_SECOND_VALUE);
-    System.out.println(result);
-  }
-
-  public static Double mathOperation(Integer a, Integer b) {
-    return Math.pow(a, b);
+    Constants.INTEGERS_LIST // list of integers
+        .stream() // stream of integers
+        .sorted(Integer::compareTo) // method reference
+        .forEach(System.out::println); // print on console
   }
 }

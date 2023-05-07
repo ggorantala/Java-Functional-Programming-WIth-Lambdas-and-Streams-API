@@ -1,4 +1,4 @@
-package src.dev.ggorantala.streamsapi.functionalprogramming.functions.pure;
+package src.dev.ggorantala.streamsapi.functionalinterfaces.types.consumer;
 /*
  * This code is part of the course "Master Java 8(11/17) Functional Programming With Lambdas And Streams API"
  * for https://ggorantala.dev.
@@ -9,17 +9,17 @@ package src.dev.ggorantala.streamsapi.functionalprogramming.functions.pure;
  * Date: 07/05/23
  */
 
+import java.util.function.Consumer;
 import src.dev.ggorantala.constants.Constants;
 
-public class MathFunctions {
+public class AcceptExample {
 
   public static void main(String[] args) {
-
-    double result = mathOperation(Constants.INTEGER_FIRST_VALUE, Constants.INTEGER_SECOND_VALUE);
-    System.out.println(result);
+    print(Constants.INTEGER_VALUE);
   }
 
-  public static Double mathOperation(Integer a, Integer b) {
-    return Math.pow(a, b);
+  public static void print(Integer number) {
+    Consumer<Integer> consumer = A -> System.out.println(A * Constants.MULTIPLIER);
+    consumer.accept(number);
   }
 }

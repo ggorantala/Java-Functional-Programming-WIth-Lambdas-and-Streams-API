@@ -1,4 +1,4 @@
-package src.dev.ggorantala.streamsapi.functionalprogramming.functions.pure;
+package src.dev.ggorantala.streamsapi.lambdas;
 /*
  * This code is part of the course "Master Java 8(11/17) Functional Programming With Lambdas And Streams API"
  * for https://ggorantala.dev.
@@ -11,15 +11,9 @@ package src.dev.ggorantala.streamsapi.functionalprogramming.functions.pure;
 
 import src.dev.ggorantala.constants.Constants;
 
-public class MathFunctions {
+public class PrintElements {
 
   public static void main(String[] args) {
-
-    double result = mathOperation(Constants.INTEGER_FIRST_VALUE, Constants.INTEGER_SECOND_VALUE);
-    System.out.println(result);
-  }
-
-  public static Double mathOperation(Integer a, Integer b) {
-    return Math.pow(a, b);
+    Constants.INTEGERS_LIST.forEach(System.out::println);
   }
 }
