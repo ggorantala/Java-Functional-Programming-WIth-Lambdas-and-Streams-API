@@ -1,4 +1,4 @@
-package src.dev.ggorantala.streamsapi.declarative;
+package src.dev.ggorantala.streamsapi.functionalprogramming.declarative;
 /*
  * This code is part of the course "Master Java 8(11/17) Functional Programming With Lambdas And Streams API"
  * for https://ggorantala.dev.
