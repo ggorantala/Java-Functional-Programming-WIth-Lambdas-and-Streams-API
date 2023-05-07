@@ -1,0 +1,2 @@
+# Java-Functional-Programming-WIth-Lambdas-and-Streams-API
+Functional programming got introduced in Java SE 8 and has recently gained popularity, and the number of lines written by developers in the last few years using functional programming(for open-source projects) did hustle around Java developers. This repository contains code snippets and examples of the course created on https://ggorantala.dev
