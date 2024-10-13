@@ -15,7 +15,7 @@ Throughout, you will get tons of hands-on experience working through practice pr
 By completing this course, you will be able to refactor existing codebase or write up OOP design faster with greater efficiency.
 
 
-course link: [https://www.ggorantala.dev/functional-programming-course/](https://www.ggorantala.dev/functional-programming-course/)
+course link: [https://www.ggorantala.dev/java-streams-api/](https://www.ggorantala.dev/java-streams-api/)
 
 ## What is Functional Programming?
 Functional programming got introduced in Java SE 8 and has recently gained popularity, and the number of lines written by developers in the last few years using functional programming(for open-source projects) did hustle around Java developers.
