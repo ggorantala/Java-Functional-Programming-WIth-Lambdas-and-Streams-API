@@ -17,14 +17,14 @@ import java.nio.file.Paths;
 import java.util.stream.Stream;
 
 public class StreamFileExample {
-  public static void main(String[] args) throws IOException {
-    Path filePath = Paths.get("file.txt");
-    BufferedReader reader = null;
-    try {
-      reader = Files.newBufferedReader(filePath);
-    } catch (IOException e) {
-      throw new RuntimeException(e);
+    public static void main(String[] args) throws IOException {
+        Path filePath = Paths.get("file.txt");
+        BufferedReader reader = null;
+        try {
+            reader = Files.newBufferedReader(filePath);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        Stream<String> lines = reader.lines();
     }
-    Stream<String> lines = reader.lines();
-  }
 }

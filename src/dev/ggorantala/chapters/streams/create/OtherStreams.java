@@ -9,19 +9,20 @@ package src.dev.ggorantala.chapters.streams.create;
  * Date: 07/05/23
  */
 
+import src.dev.ggorantala.Constants;
+
 import java.util.Random;
 import java.util.stream.IntStream;
 import java.util.stream.LongStream;
-import src.dev.ggorantala.Constants;
 
 public class OtherStreams {
-  public static void main(String[] args) {
-    IntStream.range(Constants.START_DELIMITER, Constants.END_DELIMITER)
-        .forEach(System.out::println);
+    public static void main(String[] args) {
+        IntStream.range(Constants.START_DELIMITER, Constants.END_DELIMITER)
+            .forEach(System.out::println);
 
-    LongStream.range(Constants.START_RANGE_DELIMITER, Constants.END_RANGE_DELIMITER)
-        .forEach(System.out::println);
+        LongStream.range(Constants.START_RANGE_DELIMITER, Constants.END_RANGE_DELIMITER)
+            .forEach(System.out::println);
 
-    new Random().doubles(2).forEach(System.out::println);
-  }
+        new Random().doubles(2).forEach(System.out::println);
+    }
 }

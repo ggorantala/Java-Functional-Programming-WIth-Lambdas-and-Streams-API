@@ -12,14 +12,14 @@ package src.dev.ggorantala.chapters.streams.types;
 import src.dev.ggorantala.Constants;
 
 public class SequentialStreamExample {
-  public static void main(String[] args) {
-    Integer sum =
-        Constants.INTEGERS_LIST // list of integers
-            .stream() // Stream<Integer>
-            .filter(n -> n % 2 == 0)
-            .mapToInt(n -> n * 2)
-            .sum();
+    public static void main(String[] args) {
+        Integer sum =
+            Constants.INTEGERS_LIST // list of integers
+                .stream() // Stream<Integer>
+                .filter(n -> n % 2 == 0)
+                .mapToInt(n -> n * 2)
+                .sum();
 
-    System.out.println(sum); // Output: 12
-  }
+        System.out.println(sum); // Output: 12
+    }
 }

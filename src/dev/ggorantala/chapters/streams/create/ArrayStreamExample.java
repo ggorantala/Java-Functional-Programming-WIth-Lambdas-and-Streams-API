@@ -13,13 +13,13 @@ import java.util.Arrays;
 import java.util.stream.Stream;
 
 public class ArrayStreamExample {
-  private static final String[] NAMES = {"Alice", "Bob", "Charlie"};
+    private static final String[] NAMES = {"Alice", "Bob", "Charlie"};
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    Stream<String> stream = Arrays.stream(NAMES);
+        Stream<String> stream = Arrays.stream(NAMES);
 
-    // Perform operations on the stream
-    stream.forEach(System.out::println);
-  }
+        // Perform operations on the stream
+        stream.forEach(System.out::println);
+    }
 }

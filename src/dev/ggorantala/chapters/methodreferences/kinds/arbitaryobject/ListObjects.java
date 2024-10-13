@@ -12,11 +12,11 @@ package src.dev.ggorantala.chapters.methodreferences.kinds.arbitaryobject;
 import src.dev.ggorantala.model.Person;
 
 public class ListObjects {
-  public static void main(String[] args) {
-    Person.PEOPLE // list of persons
-        .stream()
-        .map(Person::name) // Stream<String>
-        .toList()
-        .forEach(System.out::println);
-  }
+    public static void main(String[] args) {
+        Person.PEOPLE // list of persons
+            .stream()
+            .map(Person::name) // Stream<String>
+            .toList()
+            .forEach(System.out::println);
+    }
 }

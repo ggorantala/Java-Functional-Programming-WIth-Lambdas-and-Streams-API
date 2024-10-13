@@ -13,13 +13,13 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class FileIOFunctions {
-  public static void main(String[] args) throws IOException {
-    fileIOOperations();
-  }
+    public static void main(String[] args) throws IOException {
+        fileIOOperations();
+    }
 
-  public static void fileIOOperations() throws IOException {
-    FileWriter writer = new FileWriter("example.txt");
-    writer.write("Hello, world!");
-    writer.close();
-  }
+    public static void fileIOOperations() throws IOException {
+        FileWriter writer = new FileWriter("example.txt");
+        writer.write("Hello, world!");
+        writer.close();
+    }
 }

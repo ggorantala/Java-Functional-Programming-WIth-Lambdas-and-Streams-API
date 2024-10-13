@@ -12,15 +12,15 @@ package src.dev.ggorantala.chapters.streams.types;
 import src.dev.ggorantala.Constants;
 
 public class ParallelStreamExample {
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    Integer sum =
-        Constants.INTEGERS_LIST // list of integers
-            .parallelStream() // parallel stream
-            .filter(n -> n % 2 == 0)
-            .mapToInt(n -> n * 2)
-            .sum();
+        Integer sum =
+            Constants.INTEGERS_LIST // list of integers
+                .parallelStream() // parallel stream
+                .filter(n -> n % 2 == 0)
+                .mapToInt(n -> n * 2)
+                .sum();
 
-    System.out.println(sum); // Output: 12
-  }
+        System.out.println(sum); // Output: 12
+    }
 }

@@ -9,15 +9,16 @@ package src.dev.ggorantala.chapters.streams.introduction;
  * Date: 07/05/23
  */
 
+import src.dev.ggorantala.Constants;
+
 import java.util.Arrays;
 import java.util.stream.IntStream;
-import src.dev.ggorantala.Constants;
 
 public class ArrayStream {
 
-  public static void main(String[] args) {
-    IntStream myStream = Arrays.stream(Constants.INPUT_ARRAY);
+    public static void main(String[] args) {
+        IntStream myStream = Arrays.stream(Constants.INPUT_ARRAY);
 
-    myStream.forEach(System.out::println);
-  }
+        myStream.forEach(System.out::println);
+    }
 }

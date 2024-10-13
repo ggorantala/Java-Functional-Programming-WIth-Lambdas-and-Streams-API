@@ -9,38 +9,39 @@ package src.dev.ggorantala.chapters.methodreferences.kinds;
  * Date: 07/05/23
  */
 
-import java.util.List;
 import src.dev.ggorantala.model.Book;
+
+import java.util.List;
 
 public class RefToStaticMethod {
 
-  public static int compareByTitle(Book first, Book second) {
-    return first.title().compareTo(second.title());
-  }
+    public static int compareByTitle(Book first, Book second) {
+        return first.title().compareTo(second.title());
+    }
 
-  public static int compareByCost(Book first, Book second) {
-    return first.costInEuros().compareTo(second.costInEuros());
-  }
+    public static int compareByCost(Book first, Book second) {
+        return first.costInEuros().compareTo(second.costInEuros());
+    }
 
-  public static void main(String[] args) {
-    List<Book> books = Book.BOOKS;
+    public static void main(String[] args) {
+        List<Book> books = Book.BOOKS;
 
-    // Sort based on price
-    System.out.println("SORT BASED ON PRICE: ");
-    books.sort(RefToStaticMethod::compareByCost);
+        // Sort based on price
+        System.out.println("SORT BASED ON PRICE: ");
+        books.sort(RefToStaticMethod::compareByCost);
 
-    books.stream() // Stream<Book> objects
-        .map(book -> book.title() + ": " + book.costInEuros())
-        .forEach(System.out::println);
+        books.stream() // Stream<Book> objects
+            .map(book -> book.title() + ": " + book.costInEuros())
+            .forEach(System.out::println);
 
-    System.out.println("---------");
+        System.out.println("---------");
 
-    // Sort based on price
-    System.out.println("SORT BASED ON TITLES: ");
-    books.sort(RefToStaticMethod::compareByTitle);
+        // Sort based on price
+        System.out.println("SORT BASED ON TITLES: ");
+        books.sort(RefToStaticMethod::compareByTitle);
 
-    books.stream() // Stream<Book> objects
-        .map(book -> book.title() + ": " + book.rating())
-        .forEach(System.out::println);
-  }
+        books.stream() // Stream<Book> objects
+            .map(book -> book.title() + ": " + book.rating())
+            .forEach(System.out::println);
+    }
 }

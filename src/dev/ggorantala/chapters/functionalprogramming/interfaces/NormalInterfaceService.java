@@ -9,19 +9,20 @@ package src.dev.ggorantala.chapters.functionalprogramming.interfaces;
  * Date: 07/05/23
  */
 
-import java.util.List;
 import src.dev.ggorantala.model.Book;
 
+import java.util.List;
+
 public interface NormalInterfaceService {
-  void addBook(Book book);
+    void addBook(Book book);
 
-  void deleteBook(Long bookId);
+    void deleteBook(Long bookId);
 
-  void updateBook(Long bookId, Book book);
+    void updateBook(Long bookId, Book book);
 
-  void deleteBooksByAuthor(String author);
+    void deleteBooksByAuthor(String author);
 
-  List<Book> getAllBooks();
+    List<Book> getAllBooks();
 
-  Book findBookById(Long bookId);
+    Book findBookById(Long bookId);
 }

@@ -9,17 +9,18 @@ package src.dev.ggorantala.chapters.streams.introduction;
  * Date: 07/05/23
  */
 
-import java.util.stream.Collectors;
 import src.dev.ggorantala.Constants;
+
+import java.util.stream.Collectors;
 
 public class StreamMapExample {
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    Constants.FRUITS_LIST // list of integer values
-        .stream() // Stream<String>
-        .map(String::length) // Stream<Integer>
-        .collect(Collectors.toList())
-        .forEach(System.out::println); // Output: Fruit Lengths: [5, 6, 6, 4, 5, 4]
-  }
+        Constants.FRUITS_LIST // list of integer values
+            .stream() // Stream<String>
+            .map(String::length) // Stream<Integer>
+            .collect(Collectors.toList())
+            .forEach(System.out::println); // Output: Fruit Lengths: [5, 6, 6, 4, 5, 4]
+    }
 }

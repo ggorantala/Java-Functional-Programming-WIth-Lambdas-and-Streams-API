@@ -9,19 +9,20 @@ package src.dev.ggorantala.chapters.methodreferences.exercise;
  * Date: 07/05/23
  */
 
-import java.util.Comparator;
-import java.util.List;
 import src.dev.ggorantala.model.Book;
 
+import java.util.Comparator;
+import java.util.List;
+
 public class Application {
-  public static void main(String[] args) {
-    List<Book> books = Book.BOOKS;
-    books.forEach(System.out::println);
+    public static void main(String[] args) {
+        List<Book> books = Book.BOOKS;
+        books.forEach(System.out::println);
 
-    //sort book objects
-    books.sort(Comparator.comparing(Book::title));
+        //sort book objects
+        books.sort(Comparator.comparing(Book::title));
 
-    System.out.println("----After Sorting----");
-    books.forEach(System.out::println);
-  }
+        System.out.println("----After Sorting----");
+        books.forEach(System.out::println);
+    }
 }

@@ -9,19 +9,20 @@ package src.dev.ggorantala.chapters.functionalinterfaces.types.bifunction;
  * Date: 07/05/23
  */
 
-import java.util.function.BiFunction;
 import src.dev.ggorantala.Constants;
 
+import java.util.function.BiFunction;
+
 public class BiFunctionExample {
-  public static void main(String[] args) {
-    BiFunction<String, String, String> concatenateFunction =
-        (s1, s2) -> {
-          return s1 + s2;
-        };
+    public static void main(String[] args) {
+        BiFunction<String, String, String> concatenateFunction =
+            (s1, s2) -> {
+                return s1 + s2;
+            };
 
-    // Concatenating two strings using the apply() method
-    String result = concatenateFunction.apply(Constants.FIRST_STRING, Constants.SECOND_STRING);
+        // Concatenating two strings using the apply() method
+        String result = concatenateFunction.apply(Constants.FIRST_STRING, Constants.SECOND_STRING);
 
-    System.out.println("Result: " + result);
-  }
+        System.out.println("Result: " + result);
+    }
 }

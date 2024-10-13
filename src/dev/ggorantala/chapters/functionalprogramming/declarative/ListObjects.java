@@ -9,17 +9,18 @@ package src.dev.ggorantala.chapters.functionalprogramming.declarative;
  * Date: 07/05/23
  */
 
-import java.util.List;
 import src.dev.ggorantala.model.Book;
 
-public class ListObjects {
-  public static void main(String[] args) {
-    List<Book> declarativeApproach =
-        Book.BOOKS.stream()
-            .filter(book -> book.costInEuros() >= 5)
-            // .collect(Collectors.toList());
-            .toList();
+import java.util.List;
 
-    declarativeApproach.forEach(System.out::println);
-  }
+public class ListObjects {
+    public static void main(String[] args) {
+        List<Book> declarativeApproach =
+            Book.BOOKS.stream()
+                .filter(book -> book.costInEuros() >= 5)
+                // .collect(Collectors.toList());
+                .toList();
+
+        declarativeApproach.forEach(System.out::println);
+    }
 }

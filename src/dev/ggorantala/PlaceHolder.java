@@ -10,7 +10,7 @@ package src.dev.ggorantala;
  */
 
 public class PlaceHolder {
-  public static void main(String[] args) {
-    System.out.println("STREAMS API");
-  }
+    public static void main(String[] args) {
+        System.out.println("STREAMS API");
+    }
 }

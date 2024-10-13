@@ -11,5 +11,5 @@ package src.dev.ggorantala.chapters.functionalinterfaces.example;
 
 @FunctionalInterface
 public interface PowerOfTwo {
-  boolean isPowerOfTwo(Integer n);
+    boolean isPowerOfTwo(Integer n);
 }

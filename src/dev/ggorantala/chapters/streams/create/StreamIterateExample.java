@@ -9,14 +9,15 @@ package src.dev.ggorantala.chapters.streams.create;
  * Date: 07/05/23
  */
 
-import java.util.stream.Stream;
 import src.dev.ggorantala.Constants;
+
+import java.util.stream.Stream;
 
 public class StreamIterateExample {
 
-  public static void main(String[] args) {
-    Stream<Integer> stream =
-        Stream.iterate(Constants.SEED_VALUE, n -> n + 2).limit(Constants.LIMIT_VALUE);
-    stream.forEach(System.out::println);
-  }
+    public static void main(String[] args) {
+        Stream<Integer> stream =
+            Stream.iterate(Constants.SEED_VALUE, n -> n + 2).limit(Constants.LIMIT_VALUE);
+        stream.forEach(System.out::println);
+    }
 }

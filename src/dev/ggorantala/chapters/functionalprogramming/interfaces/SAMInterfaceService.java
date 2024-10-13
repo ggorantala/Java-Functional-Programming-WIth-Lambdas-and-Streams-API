@@ -14,5 +14,5 @@ import src.dev.ggorantala.model.Book;
 
 @FunctionalInterface
 public interface SAMInterfaceService {
-  void addBook(Book book);
+    void addBook(Book book);
 }

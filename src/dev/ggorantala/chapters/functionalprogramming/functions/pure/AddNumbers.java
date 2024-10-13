@@ -13,12 +13,12 @@ import src.dev.ggorantala.Constants;
 
 public class AddNumbers {
 
-  public static void main(String[] args) {
-    Integer sum = addNumbers(Constants.INTEGER_FIRST_VALUE, Constants.INTEGER_SECOND_VALUE);
-    System.out.println(sum);
-  }
+    public static void main(String[] args) {
+        Integer sum = addNumbers(Constants.INTEGER_FIRST_VALUE, Constants.INTEGER_SECOND_VALUE);
+        System.out.println(sum);
+    }
 
-  public static Integer addNumbers(Integer first, Integer second) {
-    return first + second;
-  }
+    public static Integer addNumbers(Integer first, Integer second) {
+        return first + second;
+    }
 }

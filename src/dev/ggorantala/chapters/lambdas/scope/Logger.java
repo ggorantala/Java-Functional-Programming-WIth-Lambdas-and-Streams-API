@@ -11,5 +11,5 @@ package src.dev.ggorantala.chapters.lambdas.scope;
 
 @FunctionalInterface
 public interface Logger {
-  void logMessage(String message);
+    void logMessage(String message);
 }

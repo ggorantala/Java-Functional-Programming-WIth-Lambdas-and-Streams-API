@@ -14,15 +14,15 @@ import java.io.InputStream;
 import java.net.Socket;
 
 public class NetworkIOFunctions {
-  public static void main(String[] args) throws IOException {
-    networkOperations();
-  }
+    public static void main(String[] args) throws IOException {
+        networkOperations();
+    }
 
-  public static void networkOperations() throws IOException {
-    Socket socket = new Socket("www.example.com", 80);
-    InputStream in = socket.getInputStream();
-    byte[] data = new byte[1024];
-    Integer bytesRead = in.read(data);
-    socket.close();
-  }
+    public static void networkOperations() throws IOException {
+        Socket socket = new Socket("www.example.com", 80);
+        InputStream in = socket.getInputStream();
+        byte[] data = new byte[1024];
+        Integer bytesRead = in.read(data);
+        socket.close();
+    }
 }

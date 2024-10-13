@@ -10,11 +10,11 @@ package src.dev.ggorantala.chapters.functionalprogramming.functions.impure;
  */
 
 public class RandomNumberGenerator {
-  public static void main(String[] args) {
-    System.out.println(generateRandomNumber());
-  }
+    public static void main(String[] args) {
+        System.out.println(generateRandomNumber());
+    }
 
-  public static double generateRandomNumber() {
-    return Math.random();
-  }
+    public static double generateRandomNumber() {
+        return Math.random();
+    }
 }

@@ -9,21 +9,22 @@ package src.dev.ggorantala.chapters.methodreferences.kinds;
  * Date: 07/05/23
  */
 
-import java.util.List;
-import java.util.stream.Collectors;
 import src.dev.ggorantala.Constants;
 import src.dev.ggorantala.model.Person;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class RefToConstructor {
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    List<Person> people =
-        Constants.STRING_LIST // collection of names stored in list
-            .stream() // stream of names
-            .map(Person::new) // calling the constructor
-            .collect(Collectors.toList());
+        List<Person> people =
+            Constants.STRING_LIST // collection of names stored in list
+                .stream() // stream of names
+                .map(Person::new) // calling the constructor
+                .collect(Collectors.toList());
 
-    System.out.println(people);
-  }
+        System.out.println(people);
+    }
 }

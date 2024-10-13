@@ -13,13 +13,13 @@ import src.dev.ggorantala.Constants;
 
 public class MathFunctions {
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    double result = mathOperation(Constants.INTEGER_FIRST_VALUE, Constants.INTEGER_SECOND_VALUE);
-    System.out.println(result);
-  }
+        double result = mathOperation(Constants.INTEGER_FIRST_VALUE, Constants.INTEGER_SECOND_VALUE);
+        System.out.println(result);
+    }
 
-  public static Double mathOperation(Integer a, Integer b) {
-    return Math.pow(a, b);
-  }
+    public static Double mathOperation(Integer a, Integer b) {
+        return Math.pow(a, b);
+    }
 }

@@ -12,16 +12,16 @@ package src.dev.ggorantala.chapters.functionalinterfaces.types.bifunction;
 import java.util.function.BiFunction;
 
 public class AddIntegers {
-  private static final Integer VALUE_ONE = 32;
-  private static final Integer VALUE_TWO = 23;
+    private static final Integer VALUE_ONE = 32;
+    private static final Integer VALUE_TWO = 23;
 
-  public static void main(String[] args) {
-    biFunction();
-  }
+    public static void main(String[] args) {
+        biFunction();
+    }
 
-  private static void biFunction() {
-    BiFunction<Integer, Integer, Integer> biFunctionAddition = Integer::sum;
+    private static void biFunction() {
+        BiFunction<Integer, Integer, Integer> biFunctionAddition = Integer::sum;
 
-    System.out.println(biFunctionAddition.apply(AddIntegers.VALUE_ONE, VALUE_TWO));
-  }
+        System.out.println(biFunctionAddition.apply(AddIntegers.VALUE_ONE, VALUE_TWO));
+    }
 }

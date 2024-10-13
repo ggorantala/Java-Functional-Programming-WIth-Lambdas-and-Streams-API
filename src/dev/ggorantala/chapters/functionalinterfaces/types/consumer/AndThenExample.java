@@ -9,28 +9,29 @@ package src.dev.ggorantala.chapters.functionalinterfaces.types.consumer;
  * Date: 07/05/23
  */
 
-import java.util.function.Consumer;
 import src.dev.ggorantala.Constants;
+
+import java.util.function.Consumer;
 
 public class AndThenExample {
 
-  public static void main(String[] args) {
-    print(Constants.INTEGER_VALUE, Constants.MULTIPLIER, Constants.ANOTHER_MULTIPLIER);
-  }
+    public static void main(String[] args) {
+        print(Constants.INTEGER_VALUE, Constants.MULTIPLIER, Constants.ANOTHER_MULTIPLIER);
+    }
 
-  public static void print(Integer A, Integer firstMultiplier, Integer secondMultiplier) {
-    Consumer<Integer> firstConsumer =
-        number -> {
-          System.out.println(number * firstMultiplier);
-        };
-    Consumer<Integer> secondConsumer =
-        number -> {
-          System.out.println(number * secondMultiplier);
-        };
+    public static void print(Integer A, Integer firstMultiplier, Integer secondMultiplier) {
+        Consumer<Integer> firstConsumer =
+            number -> {
+                System.out.println(number * firstMultiplier);
+            };
+        Consumer<Integer> secondConsumer =
+            number -> {
+                System.out.println(number * secondMultiplier);
+            };
 
-    Consumer<Integer> thirdConsumer = firstConsumer.andThen(secondConsumer);
+        Consumer<Integer> thirdConsumer = firstConsumer.andThen(secondConsumer);
 
-    // accept
-    thirdConsumer.accept(A);
-  }
+        // accept
+        thirdConsumer.accept(A);
+    }
 }

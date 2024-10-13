@@ -9,16 +9,17 @@ package src.dev.ggorantala.chapters.functionalinterfaces;
  * Date: 07/05/23
  */
 
-import java.util.function.BinaryOperator;
 import src.dev.ggorantala.Constants;
 
-public class BinaryOperatorExample {
-  public static void main(String[] args) {
-    BinaryOperator<Integer> addOperator = Integer::sum;
-    int result =
-        addOperator.apply(
-            Constants.INTEGER_FIRST_VALUE, Constants.INTEGER_SECOND_VALUE); // result will be 5
+import java.util.function.BinaryOperator;
 
-    System.out.println(result); // 5
-  }
+public class BinaryOperatorExample {
+    public static void main(String[] args) {
+        BinaryOperator<Integer> addOperator = Integer::sum;
+        int result =
+            addOperator.apply(
+                Constants.INTEGER_FIRST_VALUE, Constants.INTEGER_SECOND_VALUE); // result will be 5
+
+        System.out.println(result); // 5
+    }
 }

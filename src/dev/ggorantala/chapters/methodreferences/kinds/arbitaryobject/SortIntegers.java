@@ -13,11 +13,11 @@ import src.dev.ggorantala.Constants;
 
 public class SortIntegers {
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    Constants.INTEGERS_LIST // list of integers
-        .stream() // stream of integers
-        .sorted(Integer::compareTo) // method reference
-        .forEach(System.out::println); // print on console
-  }
+        Constants.INTEGERS_LIST // list of integers
+            .stream() // stream of integers
+            .sorted(Integer::compareTo) // method reference
+            .forEach(System.out::println); // print on console
+    }
 }

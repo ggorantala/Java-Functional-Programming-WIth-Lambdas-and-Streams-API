@@ -9,17 +9,18 @@ package src.dev.ggorantala.chapters.functionalinterfaces.types.consumer;
  * Date: 07/05/23
  */
 
-import java.util.function.Consumer;
 import src.dev.ggorantala.Constants;
+
+import java.util.function.Consumer;
 
 public class AcceptExample {
 
-  public static void main(String[] args) {
-    print(Constants.INTEGER_VALUE);
-  }
+    public static void main(String[] args) {
+        print(Constants.INTEGER_VALUE);
+    }
 
-  public static void print(Integer number) {
-    Consumer<Integer> consumer = A -> System.out.println(A * Constants.MULTIPLIER);
-    consumer.accept(number);
-  }
+    public static void print(Integer number) {
+        Consumer<Integer> consumer = A -> System.out.println(A * Constants.MULTIPLIER);
+        consumer.accept(number);
+    }
 }

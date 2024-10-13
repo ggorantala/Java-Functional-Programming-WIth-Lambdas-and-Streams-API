@@ -9,13 +9,14 @@ package src.dev.ggorantala.chapters.streams.introduction;
  * Date: 07/05/23
  */
 
-import java.util.stream.Stream;
 import src.dev.ggorantala.Constants;
+
+import java.util.stream.Stream;
 
 public class StreamExample {
 
-  public static void main(String[] args) {
-    Stream<String> fruits = Constants.FRUITS_LIST.stream();
-    fruits.forEach(System.out::println);
-  }
+    public static void main(String[] args) {
+        Stream<String> fruits = Constants.FRUITS_LIST.stream();
+        fruits.forEach(System.out::println);
+    }
 }

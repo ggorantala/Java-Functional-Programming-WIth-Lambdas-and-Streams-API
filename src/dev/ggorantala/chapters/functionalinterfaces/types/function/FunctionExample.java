@@ -9,16 +9,17 @@ package src.dev.ggorantala.chapters.functionalinterfaces.types.function;
  * Date: 07/05/23
  */
 
-import java.util.function.Function;
 import src.dev.ggorantala.Constants;
+
+import java.util.function.Function;
 
 public class FunctionExample {
 
-  public static void main(String[] args) {
-    Function<String, Integer> length = String::length; // same as `str -> str.length();`
+    public static void main(String[] args) {
+        Function<String, Integer> length = String::length; // same as `str -> str.length();`
 
-    // Calling the apply() method to get the length of a string
-    Integer result = length.apply(Constants.GREETING_MESSAGE);
-    System.out.println("Length: " + result);
-  }
+        // Calling the apply() method to get the length of a string
+        Integer result = length.apply(Constants.GREETING_MESSAGE);
+        System.out.println("Length: " + result);
+    }
 }

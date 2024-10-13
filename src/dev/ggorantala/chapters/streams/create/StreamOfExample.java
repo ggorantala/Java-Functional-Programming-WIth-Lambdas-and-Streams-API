@@ -12,11 +12,11 @@ package src.dev.ggorantala.chapters.streams.create;
 import java.util.stream.Stream;
 
 public class StreamOfExample {
-  public static void main(String[] args) {
-    Stream<Integer> stream1 = Stream.of(1, 2, 3);
-    stream1.forEach(System.out::println);
+    public static void main(String[] args) {
+        Stream<Integer> stream1 = Stream.of(1, 2, 3);
+        stream1.forEach(System.out::println);
 
-    Stream<String> stream2 = Stream.of("apple", "banana", "orange");
-    stream2.forEach(System.out::println);
-  }
+        Stream<String> stream2 = Stream.of("apple", "banana", "orange");
+        stream2.forEach(System.out::println);
+    }
 }

@@ -13,7 +13,7 @@ import src.dev.ggorantala.Constants;
 
 public class PrintElements {
 
-  public static void main(String[] args) {
-    Constants.INTEGERS_LIST.forEach(System.out::println);
-  }
+    public static void main(String[] args) {
+        Constants.INTEGERS_LIST.forEach(System.out::println);
+    }
 }

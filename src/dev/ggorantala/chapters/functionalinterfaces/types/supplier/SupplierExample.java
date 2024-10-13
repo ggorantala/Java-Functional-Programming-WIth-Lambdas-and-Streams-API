@@ -9,14 +9,15 @@ package src.dev.ggorantala.chapters.functionalinterfaces.types.supplier;
  * Date: 07/05/23
  */
 
-import java.util.function.Supplier;
 import src.dev.ggorantala.Constants;
+
+import java.util.function.Supplier;
 
 public class SupplierExample {
 
-  public static void main(String[] args) {
-    Supplier<String> s = () -> Constants.GREETING_MESSAGE;
+    public static void main(String[] args) {
+        Supplier<String> s = () -> Constants.GREETING_MESSAGE;
 
-    System.out.println(s.get()); // Hello, Developers!
-  }
+        System.out.println(s.get()); // Hello, Developers!
+    }
 }

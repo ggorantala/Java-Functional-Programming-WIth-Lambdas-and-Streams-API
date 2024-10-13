@@ -13,13 +13,13 @@ import java.time.LocalDateTime;
 import java.util.Date;
 
 public class DateTimeFunctions {
-  public static void main(String[] args) {
-    printDateTime();
-  }
+    public static void main(String[] args) {
+        printDateTime();
+    }
 
-  public static void printDateTime() {
-    Date currentDate = new Date();
-    LocalDateTime currentDateTime = LocalDateTime.now();
-    System.out.println("Current date is: " + currentDate + ", and time is: " + currentDateTime);
-  }
+    public static void printDateTime() {
+        Date currentDate = new Date();
+        LocalDateTime currentDateTime = LocalDateTime.now();
+        System.out.println("Current date is: " + currentDate + ", and time is: " + currentDateTime);
+    }
 }

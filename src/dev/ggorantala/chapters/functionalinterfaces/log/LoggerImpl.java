@@ -11,8 +11,8 @@ package src.dev.ggorantala.chapters.functionalinterfaces.log;
 
 public class LoggerImpl implements Logger {
 
-  @Override
-  public void logMessage(String message) {
-    System.out.println(message);
-  }
+    @Override
+    public void logMessage(String message) {
+        System.out.println(message);
+    }
 }

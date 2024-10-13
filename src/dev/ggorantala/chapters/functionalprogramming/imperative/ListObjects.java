@@ -9,17 +9,18 @@ package src.dev.ggorantala.chapters.functionalprogramming.imperative;
  * Date: 07/05/23
  */
 
-import java.util.List;
 import src.dev.ggorantala.model.Book;
 
-public class ListObjects {
-  public static void main(String[] args) {
-    List<Book> imperativeApproach = Book.BOOKS;
+import java.util.List;
 
-    for (Book book : imperativeApproach) {
-      if (book.costInEuros() >= 5) {
-        System.out.println(book);
-      }
+public class ListObjects {
+    public static void main(String[] args) {
+        List<Book> imperativeApproach = Book.BOOKS;
+
+        for (Book book : imperativeApproach) {
+            if (book.costInEuros() >= 5) {
+                System.out.println(book);
+            }
+        }
     }
-  }
 }

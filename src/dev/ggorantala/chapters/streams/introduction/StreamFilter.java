@@ -13,13 +13,13 @@ import src.dev.ggorantala.Constants;
 
 public class StreamFilter {
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    // Filter elements based on a condition
-    Constants.FRUITS_LIST // collection of strings
-        .stream() // Stream<String>
-        .filter(fruit -> fruit.startsWith("a")) // Stream<String>
-        .toList() // List<String>
-        .forEach(System.out::println); // Output: Filtered Fruits: [apple]
-  }
+        // Filter elements based on a condition
+        Constants.FRUITS_LIST // collection of strings
+            .stream() // Stream<String>
+            .filter(fruit -> fruit.startsWith("a")) // Stream<String>
+            .toList() // List<String>
+            .forEach(System.out::println); // Output: Filtered Fruits: [apple]
+    }
 }

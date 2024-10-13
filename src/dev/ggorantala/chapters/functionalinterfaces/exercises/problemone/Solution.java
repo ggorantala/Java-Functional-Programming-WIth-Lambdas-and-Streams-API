@@ -9,12 +9,13 @@ package src.dev.ggorantala.chapters.functionalinterfaces.exercises.problemone;
  * Date: 07/05/23
  */
 
-import java.util.function.Consumer;
 import src.dev.ggorantala.Constants;
 
+import java.util.function.Consumer;
+
 class Solution {
-  public static void main(String[] args) {
-    Consumer<String> fruitsConsumer = new ConsumerImpl();
-    Constants.FRUITS_LIST.forEach(fruitsConsumer);
-  }
+    public static void main(String[] args) {
+        Consumer<String> fruitsConsumer = new ConsumerImpl();
+        Constants.FRUITS_LIST.forEach(fruitsConsumer);
+    }
 }

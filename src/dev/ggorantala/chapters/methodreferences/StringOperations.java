@@ -13,17 +13,17 @@ import src.dev.ggorantala.Constants;
 
 public class StringOperations {
 
-  public static void main(String[] args) {
-    helper();
-  }
+    public static void main(String[] args) {
+        helper();
+    }
 
-  // String operation using method reference
-  private static void helper() {
-    Constants.FRUITS_LIST // collection of fruits
-        .stream() // stream of fruits
-        // mapping/transforming each stream value using method reference
-        .map(String::toUpperCase)
-        // printing them using method reference (shorthand syntax)
-        .forEach(System.out::println);
-  }
+    // String operation using method reference
+    private static void helper() {
+        Constants.FRUITS_LIST // collection of fruits
+            .stream() // stream of fruits
+            // mapping/transforming each stream value using method reference
+            .map(String::toUpperCase)
+            // printing them using method reference (shorthand syntax)
+            .forEach(System.out::println);
+    }
 }

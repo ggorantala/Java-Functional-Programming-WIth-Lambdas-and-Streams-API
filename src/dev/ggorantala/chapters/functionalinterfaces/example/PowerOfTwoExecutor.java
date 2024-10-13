@@ -10,14 +10,14 @@ package src.dev.ggorantala.chapters.functionalinterfaces.example;
  */
 
 public class PowerOfTwoExecutor {
-  public static void main(String[] args) {
-    System.out.println(isPowerOfTwo(4));
-    System.out.println(isPowerOfTwo(3));
-    System.out.println(isPowerOfTwo(10));
-    System.out.println(isPowerOfTwo(16));
-  }
+    public static void main(String[] args) {
+        System.out.println(isPowerOfTwo(4));
+        System.out.println(isPowerOfTwo(3));
+        System.out.println(isPowerOfTwo(10));
+        System.out.println(isPowerOfTwo(16));
+    }
 
-  public static boolean isPowerOfTwo(Integer A) {
+    public static boolean isPowerOfTwo(Integer A) {
 
     /*
       To understand this following formula,
@@ -25,7 +25,7 @@ public class PowerOfTwoExecutor {
         1) https://www.ggorantala.dev/power-of-2/
         2) https://www.ggorantala.dev/solution-review-power-of-2/
      */
-    PowerOfTwo helper = n -> n != 0 && (n & (n - 1)) == 0; // lambda expression
-    return helper.isPowerOfTwo(A);
-  }
+        PowerOfTwo helper = n -> n != 0 && (n & (n - 1)) == 0; // lambda expression
+        return helper.isPowerOfTwo(A);
+    }
 }

@@ -9,13 +9,14 @@ package src.dev.ggorantala.chapters.streams.create;
  * Date: 07/05/23
  */
 
-import java.util.stream.Stream;
 import src.dev.ggorantala.Constants;
 
+import java.util.stream.Stream;
+
 public class StreamGenerateExample {
-  public static void main(String[] args) {
-    Stream<Integer> stream =
-        Stream.generate(() -> Constants.INTEGER_VALUE).limit(Constants.LIMIT_VALUE);
-    stream.forEach(System.out::println);
-  }
+    public static void main(String[] args) {
+        Stream<Integer> stream =
+            Stream.generate(() -> Constants.INTEGER_VALUE).limit(Constants.LIMIT_VALUE);
+        stream.forEach(System.out::println);
+    }
 }

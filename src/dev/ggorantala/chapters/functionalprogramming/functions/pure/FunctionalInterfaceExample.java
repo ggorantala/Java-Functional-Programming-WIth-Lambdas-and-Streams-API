@@ -9,18 +9,19 @@ package src.dev.ggorantala.chapters.functionalprogramming.functions.pure;
  * Date: 07/05/23
  */
 
-import java.util.function.Predicate;
 import src.dev.ggorantala.Constants;
+
+import java.util.function.Predicate;
 
 public class FunctionalInterfaceExample {
 
-  public static void main(String[] args) {
-    boolean result = isEven(Constants.INTEGER_VALUE);
-    System.out.println(result);
-  }
+    public static void main(String[] args) {
+        boolean result = isEven(Constants.INTEGER_VALUE);
+        System.out.println(result);
+    }
 
-  public static boolean isEven(Integer A) {
-    Predicate<Integer> isEven = n -> n % 2 == 0;
-    return isEven.test(A);
-  }
+    public static boolean isEven(Integer A) {
+        Predicate<Integer> isEven = n -> n % 2 == 0;
+        return isEven.test(A);
+    }
 }

@@ -12,8 +12,8 @@ package src.dev.ggorantala.chapters.functionalinterfaces.exercises.problemone;
 import java.util.function.Consumer;
 
 class ConsumerImpl implements Consumer<String> {
-  @Override
-  public void accept(String str) {
-    System.out.println(str.toUpperCase());
-  }
+    @Override
+    public void accept(String str) {
+        System.out.println(str.toUpperCase());
+    }
 }

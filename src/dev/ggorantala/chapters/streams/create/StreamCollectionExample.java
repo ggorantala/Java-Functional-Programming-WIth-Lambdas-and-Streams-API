@@ -9,15 +9,16 @@ package src.dev.ggorantala.chapters.streams.create;
  * Date: 07/05/23
  */
 
-import java.util.stream.Stream;
 import src.dev.ggorantala.Constants;
 
+import java.util.stream.Stream;
+
 public class StreamCollectionExample {
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    Stream<String> stream = Constants.STRING_LIST.stream();
+        Stream<String> stream = Constants.STRING_LIST.stream();
 
-    // Perform operations on the stream
-    stream.forEach(System.out::println);
-  }
+        // Perform operations on the stream
+        stream.forEach(System.out::println);
+    }
 }

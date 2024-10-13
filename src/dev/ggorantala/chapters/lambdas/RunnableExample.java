@@ -12,7 +12,7 @@ package src.dev.ggorantala.chapters.lambdas;
 import src.dev.ggorantala.Constants;
 
 public class RunnableExample {
-  public static void main(String[] args) {
-    Runnable helloWorld = () -> System.out.println(Constants.GREETING_MESSAGE);
-  }
+    public static void main(String[] args) {
+        Runnable helloWorld = () -> System.out.println(Constants.GREETING_MESSAGE);
+    }
 }

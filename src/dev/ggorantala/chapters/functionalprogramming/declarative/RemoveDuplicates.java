@@ -9,19 +9,20 @@ package src.dev.ggorantala.chapters.functionalprogramming.declarative;
  * Date: 07/05/23
  */
 
-import java.util.List;
 import src.dev.ggorantala.Constants;
+
+import java.util.List;
 
 public class RemoveDuplicates {
 
-  public static void main(String[] args) {
-    List<Integer> uniqueValues =
-        Constants.DUPLICATE_INTEGER_LIST // collections data
-            .stream() // converting into Stream of integers
-            .distinct()
-            // .collect(Collectors.toList()); // or you can use `.toList();`
-            .toList(); // or you can use `.toList();`
+    public static void main(String[] args) {
+        List<Integer> uniqueValues =
+            Constants.DUPLICATE_INTEGER_LIST // collections data
+                .stream() // converting into Stream of integers
+                .distinct()
+                // .collect(Collectors.toList()); // or you can use `.toList();`
+                .toList(); // or you can use `.toList();`
 
-    System.out.println("Unique elements are: " + uniqueValues);
-  }
+        System.out.println("Unique elements are: " + uniqueValues);
+    }
 }

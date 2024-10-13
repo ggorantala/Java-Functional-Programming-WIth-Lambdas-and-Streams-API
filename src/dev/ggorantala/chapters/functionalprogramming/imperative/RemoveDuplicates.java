@@ -9,21 +9,22 @@ package src.dev.ggorantala.chapters.functionalprogramming.imperative;
  * Date: 07/05/23
  */
 
+import src.dev.ggorantala.Constants;
+
 import java.util.ArrayList;
 import java.util.List;
-import src.dev.ggorantala.Constants;
 
 public class RemoveDuplicates {
 
-  public static void main(String[] args) {
-    List<Integer> uniqueValues = new ArrayList<>();
+    public static void main(String[] args) {
+        List<Integer> uniqueValues = new ArrayList<>();
 
-    // in below, `value` variable is changed/updated for each iteration - "imperative way".
-    for (Integer value : Constants.DUPLICATE_INTEGER_LIST) {
-      if (!uniqueValues.contains(value)) {
-        uniqueValues.add(value);
-      }
+        // in below, `value` variable is changed/updated for each iteration - "imperative way".
+        for (Integer value : Constants.DUPLICATE_INTEGER_LIST) {
+            if (!uniqueValues.contains(value)) {
+                uniqueValues.add(value);
+            }
+        }
+        System.out.println("Unique elements are: " + uniqueValues);
     }
-    System.out.println("Unique elements are: " + uniqueValues);
-  }
 }

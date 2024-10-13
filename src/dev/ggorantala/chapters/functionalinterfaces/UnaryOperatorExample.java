@@ -9,14 +9,15 @@ package src.dev.ggorantala.chapters.functionalinterfaces;
  * Date: 07/05/23
  */
 
-import java.util.function.UnaryOperator;
 import src.dev.ggorantala.Constants;
 
-public class UnaryOperatorExample {
-  public static void main(String[] args) {
-    UnaryOperator<Integer> doubleOperator = x -> x * 2;
-    int result = doubleOperator.apply(Constants.VALUE); // result will be 10
+import java.util.function.UnaryOperator;
 
-    System.out.println(result);
-  }
+public class UnaryOperatorExample {
+    public static void main(String[] args) {
+        UnaryOperator<Integer> doubleOperator = x -> x * 2;
+        int result = doubleOperator.apply(Constants.VALUE); // result will be 10
+
+        System.out.println(result);
+    }
 }

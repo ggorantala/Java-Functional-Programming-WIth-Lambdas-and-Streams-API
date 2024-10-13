@@ -13,12 +13,12 @@ import src.dev.ggorantala.Constants;
 
 public class StringOperations {
 
-  public static void main(String[] args) {
-    String result = add(Constants.FIRST_STRING, Constants.SECOND_STRING);
-    System.out.println(result);
-  }
+    public static void main(String[] args) {
+        String result = add(Constants.FIRST_STRING, Constants.SECOND_STRING);
+        System.out.println(result);
+    }
 
-  public static String add(String s1, String s2) {
-    return s1.concat(s2);
-  }
+    public static String add(String s1, String s2) {
+        return s1.concat(s2);
+    }
 }
