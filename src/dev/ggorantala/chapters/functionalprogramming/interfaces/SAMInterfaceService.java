@@ -1,4 +1,4 @@
-package src.dev.ggorantala;
+package src.dev.ggorantala.chapters.functionalprogramming.interfaces;
 /*
  * This code is part of the course "Master Java 8(11/17) Functional Programming With Lambdas And Streams API"
  * for https://ggorantala.dev.
@@ -9,8 +9,10 @@ package src.dev.ggorantala;
  * Date: 07/05/23
  */
 
-public class PlaceHolder {
-    public static void main(String[] args) {
-        System.out.println("STREAMS API");
-    }
+
+import src.dev.ggorantala.model.Book;
+
+@FunctionalInterface
+public interface SAMInterfaceService {
+    void addBook(Book book);
 }

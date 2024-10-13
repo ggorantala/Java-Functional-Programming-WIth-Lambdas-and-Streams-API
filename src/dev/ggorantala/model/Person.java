@@ -13,10 +13,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public record Person(String name) {
-  public static List<Person> PEOPLE =
-      Arrays.asList(
-          new Person("Alice"), //
-          new Person("Bob"), //
-          new Person("Charlie") //
-          );
+    public static List<Person> PEOPLE =
+        Arrays.asList(
+            new Person("Alice"), //
+            new Person("Bob"), //
+            new Person("Charlie") //
+        );
 }

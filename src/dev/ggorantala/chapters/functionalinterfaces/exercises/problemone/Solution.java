@@ -1,4 +1,4 @@
-package src.dev.ggorantala;
+package src.dev.ggorantala.chapters.functionalinterfaces.exercises.problemone;
 /*
  * This code is part of the course "Master Java 8(11/17) Functional Programming With Lambdas And Streams API"
  * for https://ggorantala.dev.
@@ -9,8 +9,13 @@ package src.dev.ggorantala;
  * Date: 07/05/23
  */
 
-public class PlaceHolder {
+import src.dev.ggorantala.Constants;
+
+import java.util.function.Consumer;
+
+class Solution {
     public static void main(String[] args) {
-        System.out.println("STREAMS API");
+        Consumer<String> fruitsConsumer = new ConsumerImpl();
+        Constants.FRUITS_LIST.forEach(fruitsConsumer);
     }
 }

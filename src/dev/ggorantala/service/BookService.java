@@ -13,11 +13,11 @@ import src.dev.ggorantala.model.Book;
 
 @FunctionalInterface
 public interface BookService {
-  Book getBook(
-      String title,
-      String author,
-      Integer year,
-      Integer copiesSoldInMillions,
-      Double rating,
-      Double costInEuros);
+    Book getBook(
+        String title,
+        String author,
+        Integer year,
+        Integer copiesSoldInMillions,
+        Double rating,
+        Double costInEuros);
 }
